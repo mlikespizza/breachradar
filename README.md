@@ -1,5 +1,4 @@
 
-```
 # 🚨 BreachRadar – Real-Time Cyber Threat Simulation & Monitoring
 
 BreachRadar is a simulated Security Operations Center (SOC) project that mimics real-world cyber threat detection using the ELK Stack (Elasticsearch, Logstash, Kibana) and a custom-built Python log simulator. It’s designed to visualize and analyze security events in real time using dynamic dashboards and custom log generation.
