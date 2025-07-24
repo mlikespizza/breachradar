@@ -83,6 +83,14 @@ The project includes sample security logs in JSON format:
 {"@timestamp":"2025-07-23T08:13:01Z", "message":"SQL Injection attempt detected in URL parameter from 172.16.0.4 -> /login.php?user=admin'--"}
 {"@timestamp":"2025-07-23T08:13:45Z", "message":"Connection attempt to blocked port 23 (Telnet) from external IP 203.0.113.8"}
 ```
+## 🔄 Log Simulator (Python)
+
+This script (`log_generator.py`) generates synthetic security logs and appends them to the monitored `generated.log` file. Logs are ingested in real time by Filebeat and visualized in Kibana.
+
+Run with:
+
+```bash
+python log_generator.py
 
 ---
 
@@ -104,6 +112,7 @@ breachradar/
 │       ├── breach.log              # Sample breach logs
 │       └── sample.log              # Additional sample logs
 └── README.md
+└── log_generator.py
 ```
 
 ---
