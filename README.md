@@ -2,14 +2,14 @@
 
 **BreachRadar** is a simulated real-time threat monitoring dashboard built using the **ELK Stack** (Elasticsearch, Logstash, Kibana, and Filebeat). It mimics a basic SIEM (Security Information and Event Management) system, capable of ingesting log data, identifying threat patterns, and visualizing them for quick analysis.
 
-## 🔍 Overview
+## Overview
 
 This project demonstrates:
 - Ingestion of synthetic security logs (e.g., SQLi, XSS, Port Scans)
 - Parsing and structuring of logs using Logstash
 - Real-time dashboards for SOC-style monitoring via Kibana
 
-## 🧰 Tech Stack
+## Tech Stack
 
 - **Docker**
 - **Elasticsearch** – for indexing logs
@@ -19,7 +19,7 @@ This project demonstrates:
 
 ---
 
-## ⚙️ Architecture
+## Architecture
 
 ```
 [Log Files] → [Filebeat] → [Logstash] → [Elasticsearch] → [Kibana]
@@ -42,7 +42,7 @@ This project demonstrates:
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 1. **Clone the repository**
 ```bash
@@ -74,7 +74,7 @@ docker-compose ps
 
 ---
 
-## 🧪 Sample Log Format
+## Sample Log Format
 
 The project includes sample security logs in JSON format:
 
@@ -86,7 +86,7 @@ The project includes sample security logs in JSON format:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 breachradar/
@@ -108,7 +108,7 @@ breachradar/
 
 ---
 
-## 🔧 Configuration Details
+## Configuration Details
 
 ### Filebeat Configuration
 - Monitors `test-logs/*.log` files
@@ -127,7 +127,7 @@ breachradar/
 
 ---
 
-## 🛠️ Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -145,19 +145,13 @@ breachradar/
 
 ---
 
-## 🛠️ Future Enhancements
+## Future Enhancements
 
 * 🔁 Automate log generation with Python & Redis
 * 🔔 Add alerting (e.g., via Elasticsearch Watcher)
 * 📦 Deploy to cloud or container orchestrator
 * 🎯 Add more sophisticated log parsing and field extraction
 * 📊 Create pre-built Kibana dashboards and visualizations
-
----
-
-## 📸 Screenshots
-
-> *Add screenshots of your Kibana dashboard here if possible*
 
 ---
 
